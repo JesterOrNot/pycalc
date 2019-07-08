@@ -9,7 +9,12 @@ def les():
         b = ((slope * x1)*-1) + y1
         print('y = {}x + {}'.format(slope, b))
     slope()
-les()
+try:
+	les()
+except ZeroDivisionError:
+	print("You can dividde by zero silly!")
+
+
 #The method I used for finding the equ for b was via reorganizing
 # y = mx + b
 # -b     -b
