@@ -1,5 +1,5 @@
 #! /usr/bin/python3.7
-print('Welcome! Tnis is a algebra calculator, available calculators include: Linear Equasion from 2 points(les), quadratic equasion (quad), absolute value(av)')
+print('Welcome! Tnis is a algebra calculator, available calculators include: Linear Equasion from 2 points(les), quadratic equasion (quad), absolute value(av), Factor equasions(factor)')
 while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
@@ -9,6 +9,8 @@ while True:
           import quad
         elif userInt in 'av':
           import av
+        elif userInt in 'factor':
+          import f
         elif userInt == 'exit':
           exit()
         else:
