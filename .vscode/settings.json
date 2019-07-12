@@ -3,5 +3,6 @@
     "python.linting.enabled": true,
     "debug.inlineValues": true,
     "git.enableCommitSigning": true,
-    "git.postCommitCommand": "push"
+    "git.postCommitCommand": "push",
+    "python.linting.pylintEnabled": true
 }
