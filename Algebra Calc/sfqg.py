@@ -5,16 +5,16 @@ dict1 ={
 }
 def get_Value():
 	a = float(input("What is a?: "))
-	dict1.update({"a":a})
+	dict1.update({"a" : a})
 	b = float(input("What is b?: "))
-	dict1.update({"b":b})
+	dict1.update({"b" : b})
 	c = float(input("What is c?: "))
-	dict1.update({"c":c})
+	dict1.update({"c" : c})
 def lineOfSym():
 	a = dict1.get("a")
 	b = dict1.get("b")
 	los = b*-1/2*a
-	dict1.update({"los":los})
+	dict1.update({"los" : los})
 	print('The line of symemetey is x = {}'.format(los))
 def quad():
 	a = dict1.get("a")
