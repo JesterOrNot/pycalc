@@ -41,12 +41,19 @@ def vertex():
     c1 = c
     y = a1 + b1 + c1
     print("The vetex is ({},{})".format(los, y))
+def yInt():
+    a = dict1.get("a")
+    b = dict1.get("b")
+    c = dict1.get('c')
+    y = (a*0) + (b*0) + c
+    print("The y intercept is (0, {})".format(y))
 
 
 get_Value()
 lineOfSym()
 vertex()
+yInt()
 try:
     quad()
 except ValueError:
-    print("There is not x intercept")
+    print("There is no x intercept")
