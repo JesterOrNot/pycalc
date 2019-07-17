@@ -1,3 +1,7 @@
 scipy
 conda
 sympy
+numpy
+matplotlib
+ipython
+jupyter
