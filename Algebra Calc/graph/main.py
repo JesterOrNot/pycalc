@@ -4,9 +4,9 @@ userInt = input("What do you want to graph?: ")
 
 def choose():
     if userInt in 'qe':
-        import quadratic_Models
+        import graph_quadratic_Models
     elif userInt in 'ef':
-        import exponential_funcs
+        import graph_exponential_funcs
     else:
         print("Error, Please try again this error may be due to mispelling on your part")
         choose()

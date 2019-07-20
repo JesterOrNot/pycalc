@@ -7,7 +7,6 @@ import math
 dict1 = {
 }
 
-
 def exponentialbaseb():
     a = float(input("What is a?: "))
     dict1.update({"a": a})
@@ -21,8 +20,6 @@ def exponentialbaseb():
         plt.plot(x, y, color='k')
         plt.axhline(y=0, color='k')
         plt.axvline(x=0, color='k')
-        plt.xlim((-10, 10))
-        plt.ylim((-10, 10))
         plt.grid(axis='both', which='both')
         plt.show()
     graph(formula)
@@ -31,7 +28,7 @@ def exponentialbaseb():
 def exponential_growth():
     a = float(input("What is a?: "))
     dict1.update({"a": a})
-    r = float(input("What is b?: "))
+    r = float(input("What is r?: "))
     dict1.update({"r": r})
     formula = '{}*(1 + {})**x'.format(a, r)
 
@@ -41,8 +38,6 @@ def exponential_growth():
         plt.plot(x, y, color='k')
         plt.axhline(y=0, color='k')
         plt.axvline(x=0, color='k')
-        plt.xlim((-10, 10))
-        plt.ylim((-10, 10))
         plt.grid(axis='both', which='both')
         plt.show()
     graph(formula)
@@ -61,14 +56,13 @@ def exponential_decay():
         plt.plot(x, y, color='k')
         plt.axhline(y=0, color='k')
         plt.axvline(x=0, color='k')
-        plt.xlim((-10, 10))
-        plt.ylim((-10, 10))
         plt.grid(axis='both', which='both')
         plt.show()
     graph(formula)
 
 
 def choose():
+    print("Welcome to the exponential equasion grapher! Current options include: exponential growth grapher, exponential decay grapher or baseb?")
     userInt = input("What do you want?: ")
     if userInt in 'ef':
         exponentialbaseb()
