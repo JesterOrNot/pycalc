@@ -1,6 +1,7 @@
 import pandas as pd
 from sympy import *
 
+
 def table():
     x1 = Symbol('x1')
     y = []

@@ -1,4 +1,4 @@
-from sympy import collect
+from sympy import simplify
 from sympy.abc import *
 
 
@@ -15,7 +15,7 @@ def evalExpFunc():
 
 def evalExpProp():
     expr = input('What exponential equ are we simplifying?: ')
-    collected_expr = collect(expr, x)
+    collected_expr = simplify(expr)
     print(collected_expr)
 def choose():
     print('The options are: simplifying exponentials(se) and evaluating exponential equasions(eee)')
