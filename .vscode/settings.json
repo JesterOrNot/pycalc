@@ -5,5 +5,9 @@
     "git.enableCommitSigning": true,
     "git.postCommitCommand": "push",
     "python.linting.pylintEnabled": true,
-    "python.linting.pep8Enabled": false
+    "python.linting.pep8Enabled": false,
+    "python.testing.promptToConfigure": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false
 }

@@ -1,6 +1,6 @@
 #! /usr/bin/python3.7
 import os
-print('Welcome! Tnis is a algebra calculator, available calculators include: Linear Equasion from 2 points(les), quadratic equasion (quad), absolute value(av), Factor equasions(factor), Zero product propertey(zpp), Greatest common factor calculator(gcf), Line of symmetrey calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential equasions(eef)')
+print('Welcome! Tnis is a algebra calculator, available calculators include: Linear Equasion from 2 points(les), quadratic equasion (quad), absolute value(av), Factor equasions(factor), Zero product propertey(zpp), Greatest common factor calculator(gcf), Line of symmetrey calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential functions(eef), function table(ft)')
 while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
@@ -22,6 +22,8 @@ while True:
             import sfqg
         elif userInt in 'eef':
             import eef
+        elif userInt in 'ft':
+            import equTable
         elif userInt in 'graphcalc':
             os.chdir('graph')
             os.system('python3 ./main.py')

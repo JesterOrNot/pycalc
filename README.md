@@ -10,4 +10,4 @@ New Features: Geomometry Calculator(Area of trapezoid and other shapes like circ
 
 ##### v1.12 #####
 New Features: Geomometry Calculator(trig table) Algebra Calculator(absolute value,also 
-factor equasions calc, zpp calculator, greatest common factor calculator, Line of symmetrey calc,standad form equasion calculator, vetex form grapher standard form grapher, exponential function grapher, evaluate exponential functions calc, various bug fixes) Physics Calc(lorentz factor)
+factor equasions calc, zpp calculator, greatest common factor calculator, Line of symmetrey calc,standad form equasion calculator, vetex form grapher standard form grapher, exponential function grapher, evaluate exponential functions calc, fumction table, various bug fixes) Physics Calc(lorentz factor)
