@@ -3,7 +3,6 @@ from sympy import *
 
 def table():
     x1 = Symbol('x1')
-    x = 0
     y = []
     z = int(input("How many items are there?: "))
     v =  input("What is the equ?: ")
