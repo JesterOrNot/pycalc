@@ -1,3 +1,5 @@
+image:
+  file: .gitpod.dockerfile
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
@@ -14,3 +16,6 @@ github:
     addBadge: false
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
+tasks:
+- init: pip3 install --upgrade pip
+- init: git pull
