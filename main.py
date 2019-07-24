@@ -8,19 +8,19 @@ while z == 0:
 	def chooseCalc():
 		userInt = input('What Calc do you want?: ').lower()
 		if userInt == 'cc':
-			os.chdir('Chem Calc')
+			os.chdir('chem_calc')
 			os.system('python3 ./main.py')
 		elif userInt == 'ac':
-			os.chdir('Algebra Calc')
+			os.chdir('algebra_calc')
 			os.system('python3 ./main.py')
 		elif userInt == 'gc':
-			os.chdir('Geom Calc')
+			os.chdir('geom_calc')
 			os.system('python3 ./main.py')
 		elif userInt == 'pc':
-			os.chdir('Physics Calc')
+			os.chdir('physics_calc')
 			os.system('python3 ./main.py')
 		elif userInt == 'mc':
-			os.chdir("Misc_Calculators")
+			os.chdir("misc_calc")
 			os.system("python3 ./main.py")
 		elif userInt == 'exit':
 			exit()
