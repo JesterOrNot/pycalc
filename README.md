@@ -14,4 +14,4 @@ factor equasions calc, zpp calculator, greatest common factor calculator, Line o
 
 
 #### v1.12.1 ####
-New Features: Misc Calc, the misc calc is going to be a assortment of diffrent random calculators so far we have the gpa calc you can expect to see this calculator updated soon maybe possibly :)
+New Features: Misc Calc, the misc calc is going to be a assortment of different random calculators so far we have the gpa calc you can expect to see this calculator updated soon maybe possibly :)
