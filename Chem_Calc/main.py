@@ -6,13 +6,13 @@ while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
         if userInt == 'he':
-            import he
+            import chem_calc.heatEqu
         elif userInt == 'cgl':
-            import cglv2
+            import chem_calc.combGasLaw
         elif userInt == 'igl':
-            import igl
+            import chem_calc.IdeGasLaw
         elif userInt == 'ee':
-            import ee
+            import chem_calc.enthEqu
         elif userInt == 'exit':
             exit()
         else:

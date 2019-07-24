@@ -3,7 +3,7 @@ print("Welcome to misc calcs this is just a bunch of handy little calcs that cou
 def choose():
     usrInt = input("What Calc do you want?: ").lower()
     if usrInt in 'gpa':
-         import gpa_calc
+         import misc_calc.gpa_calc
     else:
         print("An error has occured\nPlease try again")
 choose()

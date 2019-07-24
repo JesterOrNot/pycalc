@@ -10,11 +10,11 @@ while True:
 			os.chdir('Area')
 			os.system('python3 ./main.py')
 		elif userInt == 'pt':
-			import pt
+			import geom_calc.pythagTheo
 		elif userInt == 'sct':
-			import sct
+			import geom_calc.SinCosTan
 		elif userInt == 'tt':
-			import trigTabl
+			import geom_calc.sincostan
 		elif userInt == 'exit':
 			exit()
 	chooseCalc()

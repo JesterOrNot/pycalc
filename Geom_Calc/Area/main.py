@@ -5,11 +5,11 @@ print("Welcome to the area finder the shapes that this can find the area for so 
 def asp():
 	userInt = input('What do you want to find the area of?: ').lower()
 	if userInt == 'trap':
-		import AOTrap
+		import geom_calc.area.AOTrap
 	elif userInt == 'tri':
-		import AOTriangle
+		import geom_calc.area.AOTriangle
 	elif userInt == 'circ':
-		import AOCircle
+		import geom_calc.area.AOCircle
 	elif userInt == 'exit':
 		exit()
 	else:

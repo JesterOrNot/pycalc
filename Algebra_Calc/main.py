@@ -5,25 +5,25 @@ while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
         if userInt in 'les':
-            import les
+            import algebra_calc.linEquSolv
         elif userInt in 'quad, quadratic':
-            import quad
+            import algebra_calc.quad
         elif userInt in 'av':
-            import av
+            import algebra_calc.AbsVal
         elif userInt in 'factor':
-            import f
+            import algebra_calc.factor
         elif userInt in 'zpp':
-            import zpp
+            import algebra_calc.zeroProdProp
         elif userInt in 'gcf':
-            import gcf
+            import algebra_calc.GCF
         elif userInt in 'los':
-            import los
+            import algebra_calc.linOfSym
         elif userInt in 'sfqg':
-            import sfqg
+            import algebra_calc.standFormQuadFunc
         elif userInt in 'eef':
-            import eef
+            import algebra_calc.evalExpFun
         elif userInt in 'ft':
-            import equTable
+            import algebra_calc.funcTable
         elif userInt in 'graphcalc':
             os.chdir('graph')
             os.system('python3 ./main.py')
