@@ -1,29 +1,29 @@
 #! /usr/bin/python3.7
 import os
-print('Welcome! Tnis is a algebra calculator, available calculators include: Linear Equasion from 2 points(les), quadratic equasion (quad), absolute value(av), Factor equasions(factor), Zero product propertey(zpp), Greatest common factor calculator(gcf), Line of symmetrey calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential functions(eef), function table(ft)')
+print('Welcome! Tins is a algebra calculator, available calculators include: Linear Equation from 2 points(les), quadratic equation (quad), absolute value(av), Factor equations(factor), Zero product property(zpp), Greatest common factor calculator(gcf), Line of symmetry calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential functions(eef), function table(ft)')
 while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
         if userInt in 'les':
-            import algebra_calc.linEquSolv
+            import algeb.linEquSolv
         elif userInt in 'quad, quadratic':
-            import algebra_calc.quad
+            import algeb.quad
         elif userInt in 'av':
-            import algebra_calc.AbsVal
+            import algeb.AbsVal
         elif userInt in 'factor':
-            import algebra_calc.factor
+            import algeb.factor
         elif userInt in 'zpp':
-            import algebra_calc.zeroProdProp
+            import algeb.zeroProdProp
         elif userInt in 'gcf':
-            import algebra_calc.GCF
+            import algeb.GCF
         elif userInt in 'los':
-            import algebra_calc.linOfSym
+            import algeb.linOfSym
         elif userInt in 'sfqg':
-            import algebra_calc.standFormQuadFunc
+            import algeb.standFormQuadFunc
         elif userInt in 'eef':
-            import algebra_calc.evalExpFun
+            import algeb.evalExpFun
         elif userInt in 'ft':
-            import algebra_calc.funcTable
+            import algeb.funcTable
         elif userInt in 'graphcalc':
             os.chdir('graph')
             os.system('python3 ./main.py')

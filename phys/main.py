@@ -9,11 +9,11 @@ while True:
     def chooseCalc():
         userInt = input("Which calculator do you want?: ").lower()
         if userInt in keywords1:
-            import physics_calc.DistTimeSpeedForce
+            import phys.distspeed
         elif userInt in keywords2:
-            import physics_calc.gravityForce
+            import phys.gravforce
         elif userInt == 'lf':
-            import physics_calc.lorenz_fact
+            import phys.lorenfact
         elif userInt == 'exit':
             exit()
         else:

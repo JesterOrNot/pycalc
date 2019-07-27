@@ -1,18 +1,18 @@
 #! /usr/bin/python3.7
 print(
-    'Welcome! This is the Chem calc available calculators are Combined Gas Law(cgl), Ideal gas law(igl), Heat Equasion(he), Enthalpy Equasion(ee)'
+    'Welcome! This is the Chem calc available calculators are Combined Gas Law(cgl), Ideal gas law(igl), Heat Equation(he), Enthalpy Equation(ee)'
 )
 while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
         if userInt == 'he':
-            import chem_calc.heatEqu
+            import chem.heatEqu
         elif userInt == 'cgl':
-            import chem_calc.combGasLaw
+            import chem.combGasLaw
         elif userInt == 'igl':
-            import chem_calc.IdeGasLaw
+            import chem.IdeGasLaw
         elif userInt == 'ee':
-            import chem_calc.enthEqu
+            import chem.enthEqu
         elif userInt == 'exit':
             exit()
         else:
