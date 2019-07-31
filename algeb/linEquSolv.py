@@ -12,7 +12,7 @@ def les():
 try:
 	les()
 except ZeroDivisionError:
-	print("You can divide by zero silly!")
+	print("You can't divide by zero silly!")
 
 
 #The method I used for finding the equ for b was via reorganizing
