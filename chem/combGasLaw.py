@@ -7,17 +7,17 @@ def convert():
     elif convertorno in 'no, No, nO, NO,n':
         CGL()
 def CGL():
-    unknown = input('What is the unkown Variable P1,V1,T1,P2,V2,T2: ')
+    unknown = input('What is the unknown Variable P1,V1,T1,P2,V2,T2: ')
     if unknown in 'P1,p1':
         v1 = float(input('What is the initial volume in Liters: '))
         v2 = float(input('What is the volume after in Liters: '))
-        t1 = float(input('What is th initial Tempature in Kelvin: '))
+        t1 = float(input('What is th initial Temperature in Kelvin: '))
         t2 = float(input('What is the temperature after in K: '))
         p2 = float(input('What is the pressure after in atm: '))
         p1 = p2 * v2 * t1 / (t2 * v1)
         print('P1 = {} atm'.format(p1))
     if unknown in 'P2,p2':
-        t1 = float(input('What is th initial Tempature in Kelvin: '))
+        t1 = float(input('What is th initial Temperature in Kelvin: '))
         t2 = float(input('What is the temperature after in K: '))
         v1 = float(input('What is the initial volume in Liters'))
         v2 = float(input('What is the volume after in Liters: '))
@@ -27,7 +27,7 @@ def CGL():
     if unknown in 'V1,v1':
         p1 = float(input('What is the initial pressure in atm: '))
         p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Tempature in Kelvin: '))
+        t1 = float(input('What is th initial Temperature in Kelvin: '))
         t2 = float(input('What is the temperature after in K: '))
         v2 = float(input('What is the volume after in Liters: '))
         v1 = p2 * v2 * t1 / (t2 * p1)
@@ -35,7 +35,7 @@ def CGL():
     if unknown in 'V2,v2':
         p1 = float(input('What is the initial pressure in atm: '))
         p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Tempature in Kelvin: '))
+        t1 = float(input('What is th initial Tempters in Kelvin: '))
         t2 = float(input('What is the temperature after in K: '))
         v1 = float(input('What is the initial volume in Liters: '))
         v2 = p1 * t2 * v1 / (p2 * t1)
@@ -51,14 +51,14 @@ def CGL():
     if unknown in 'T2,t2':
         p1 = float(input('What is the initial pressure in atm: '))
         p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Tempature in Kelvin: '))
+        t1 = float(input('What is th initial Temperature in Kelvin: '))
         v2 = float(input('What is the volume after in Liters: '))
         v1 = float(input('What is the initial volume in Liters: '))
         t2 = p2 * t1 * v2 / (p1 * v1)
         print('T2 = {} kelvin'.format(t2))
 def uc():
-    unknown = input('What Are we converting to Tempature or pressure: ')
-    if unknown in 'temp, Tempature, tempature, t':
+    unknown = input('What Are we converting to Temperature or pressure: ')
+    if unknown in 'temp, Temperature, temperature, t':
         def TC():
             c = 0
             decimal = c
