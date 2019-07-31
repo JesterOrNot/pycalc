@@ -19,8 +19,8 @@ github:
 tasks:
 - init: >
     yarn install \
+- init: >
+    apt-get update \
 - command: >
     pip3 install --upgrade pip && \
     pip3 install -r requirements.txt && \
-- command: >
-    apt-get update && \
