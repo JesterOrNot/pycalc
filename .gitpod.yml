@@ -17,6 +17,8 @@ github:
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
 tasks:
+- init: >
+    yarn install \
 - command: >
     pip3 install --upgrade pip \
     pip3 install -r requirements.txt \
