@@ -18,8 +18,8 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
 - command: >
-    pip3 install --upgrade pip
-    pip3 install -r requirements.txt
+    pip3 install --upgrade pip \
+    pip3 install -r requirements.txt \
 - command: >
-    apt-get update
-    apt-get upgrade
+    apt-get update \
+    apt-get upgrade \
