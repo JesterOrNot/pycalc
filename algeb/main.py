@@ -1,6 +1,6 @@
 #! /usr/bin/python3.7
 import os
-print('Welcome! Tins is a algebra calculator, available calculators include: Linear Equation from 2 points(les), quadratic equation (quad), absolute value(av), Factor equations(factor), Zero product property(zpp), Greatest common factor calculator(gcf), Line of symmetry calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential functions(eef), function table(ft)')
+print('Welcome! Tins is a algebra calculator, available calculators include: Linear Equation from 2 points(les), quadratic equation (quad), absolute value(av), Factor equations(factor), Zero product property(zpp), Greatest common factor calculator(gcf), Line of symmetry calc(los), standard form quadratics grapher(sfqg), graphing calc(graphcalc), evaluate exponential functions(eef), function table(ft), median finder(nf)')
 while True:
     def calc():
         userInt = input('What calculator do you want?: ').lower()
@@ -24,6 +24,8 @@ while True:
             import algeb.evalExpFun
         elif userInt in 'ft':
             import algeb.funcTable
+        elif userInt in 'mf':
+            import algeb.median
         elif userInt in 'graphcalc':
             os.chdir('graph')
             os.system('python3 ./main.py')
