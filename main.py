@@ -3,7 +3,7 @@
 
 import os
 
-print("This is the main menu of the calculator The options are the Chem calc(cc), the algebra calc (ac), the geom calc (gc) or the physics calculator (pc), and misc calc (mc)")
+print("This is the main menu of the calculator \n The options are the Chem calc(cc), the algebra calc (ac), the geom calc (gc) or the physics calculator (pc), and misc calc (mc)")
 z = 0
 while z == 0:
     def chooseCalc():

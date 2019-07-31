@@ -23,5 +23,6 @@
     "python.linting.flake8Enabled": true,
     "python.analysis.cacheFolderPath": "C:\\Users\\seanh\\Desktop\\Python Cache",
     "editor.wordWrap": "on",
-    "editor.formatOnSave": true
+   "editor.formatOnSave": true,
+   "editor.autoSave": "on"
 }
