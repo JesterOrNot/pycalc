@@ -1,1 +1,3 @@
-print(f'Starting up {__name__}')
+from .graphExpFunc import *
+from .graphQuadMod import *
+from .main import *

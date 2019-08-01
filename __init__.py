@@ -1,4 +1,1 @@
-print(f"starting up {__name__}")
-__all__=[
-	'main'
-]
+from .main import main

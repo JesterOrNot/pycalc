@@ -1,1 +1,2 @@
-print(f"Starting up {__name__}")
+from .gpa import *
+from .main import *

@@ -1,6 +1,17 @@
 FROM gitpod/workspace-full
-USER root
-RUN apt-get update && apt-get install -y \
-    screenfetch zsh curl nano \
-    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+RUN chmod +x setup.sh
+RUN bash setup.sh
+RUN \
+  apt-get update && \
+  apt upgrade -y --force-yes && apt-get -y install \
+    apt-utils \
+    screenfetch \
+    ant \
+    zsh \
+    curl \
+    nano \
+    vim \
+    make \
+    makefile \
+    cmake
 RUN pip3 install --upgrade pip

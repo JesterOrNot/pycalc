@@ -1,1 +1,4 @@
-print(f"Starting up {__name__}")
+from .AOCircle import *
+from .AOTrap import *
+from .AOTriangle import *
+from .main import *

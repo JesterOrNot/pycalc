@@ -1,2 +1,11 @@
-print(f"Importing: Algebra Calc")
-__all__=['main', 'factor', 'AbsVal', "evalExpFun", "funcTable", "GCF", "linEquSolv", "linOfSym", "quad", "standFormQuadFunc", 'zeroProdProp']
+from .main import *
+from .AbsVal import *
+from .evalExpFun import *
+from .funcTable import *
+from .GCF import *
+from .linEquSolv import *
+from .linOfSym import *
+from .median import *
+from .quad import *
+from .standFormQuadFunc import *
+from .zeroProdProp import *
