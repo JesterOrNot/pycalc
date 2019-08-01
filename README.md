@@ -1,3 +1,10 @@
+# Installation #
+1. git clone https://github.com/JesterOrNot/pycalc.git
+2. cd pycalc
+3. chmod +x setup.sh
+4. bash setup.sh
+
+
 # Changelog #
 
 ##### v1.0 (initial release) #####
