@@ -21,7 +21,7 @@ tasks:
         chmod +x depend.sh && \
             exit
     - command: >
-        bash depend.sh && \
+        bash setup.sh && \
             exit
     - command: >
         pip3 install -r requirements.txt && \
