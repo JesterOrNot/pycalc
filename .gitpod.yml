@@ -17,12 +17,10 @@ github:
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
 tasks:
-- init: >
-    yarn install \
-- init: >
-    apt-get update \
-- init: >
-    chmod +x setup.sh && \
-    bash setup.sh
-- command: >
-    pip3 install -r requirements.txt \
+    - command: >
+        yarn install
+    - command: >
+        chmod +x setup.sh && \
+        bash setup.sh
+    - command: >
+        pip3 install -r requirements.txt \
