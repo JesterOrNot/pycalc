@@ -18,9 +18,11 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
     - command: >
-        yarn install
+        chmod +x depend.sh && \
+            exit
     - command: >
-        chmod +x setup.sh && \
-        bash setup.sh
+        bash depend.sh && \
+            exit
     - command: >
-        pip3 install -r requirements.txt \
+        pip3 install -r requirements.txt && \
+            exit
