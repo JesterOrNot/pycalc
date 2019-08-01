@@ -29,6 +29,5 @@ while Z == 0:
             exit()
         else:
             print('An error has ocurred :( please try again')
-if __name__ == '__main__':
     main()
 # This is the main controller file where the main menu when you start the application is controlled this script uses the os module to change the directory so that it can run the disired program's controller (main.py)
