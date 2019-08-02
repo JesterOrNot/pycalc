@@ -20,5 +20,3 @@ github:
 tasks:
 - command: >
     bash setup.sh
-- command: >
-    pip3 install -r requirements.txt \
