@@ -14,7 +14,6 @@ REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1.0'
 REQUIRED = [
     'scipy',
-    'conda',
     'sympy',
     'numpy',
     'matplotlib',
