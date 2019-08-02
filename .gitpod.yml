@@ -19,10 +19,6 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
 - command: >
-    yarn install \
-- command: >
-    apt-get update \
-- command: >
     bash setup.sh
 - command: >
     pip3 install -r requirements.txt \
