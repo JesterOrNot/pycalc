@@ -1,3 +1,4 @@
+
 image:
   file: .gitpod.Dockerfile
 github:
@@ -17,12 +18,11 @@ github:
     # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
 tasks:
-    - command: >
-        chmod +x depend.sh && \
-            exit
-    - command: >
-        bash setup.sh && \
-            exit
-    - command: >
-        pip3 install -r requirements.txt && \
-            exit
+- command: >
+    yarn install \
+- command: >
+    apt-get update \
+- command: >
+    bash setup.sh
+- command: >
+    pip3 install -r requirements.txt \
