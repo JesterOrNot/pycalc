@@ -6,6 +6,7 @@
 4. bash setup.sh
 ## METHOD 2 ##
 1 use gitpod it will be preinstalled for you
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/...)
 
 # Changelog #
 
