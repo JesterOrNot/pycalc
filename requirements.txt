@@ -1,7 +1,7 @@
 scipy
-conda
 sympy
 numpy
 matplotlib
 ipython
+setuptools
 jupyter

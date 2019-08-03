@@ -1,2 +1,5 @@
-print(f"Starting Chem Calc from {__name__}")
-__all__ = ['combGasLaw', 'enthEqu', 'heatEqu', 'IdeGasLaw', 'main']
+from .enthEqu import *
+from .combGasLaw import *
+from .heatEqu import *
+from .IdeGasLaw import *
+from .main import*
