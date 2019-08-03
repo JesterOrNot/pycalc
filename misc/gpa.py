@@ -25,7 +25,7 @@ def gpa():
         r.append(values[m])
       else:
         print('Sorry yum must have mistyped something. Please try again :(')
-    sumofnum = sum(r) # the equasion for gpa is sum/length this taes the sum of the list we made and stores it in a variable
+    sumofnum = sum(r) # the equation for gpa is sum/length this takes the sum of the list we made and stores it in a variable
     length = len(r) # this takes the length of the list and once again stores it in a variable
     gpa = sumofnum / length # this is the actual equ
     print('Your gpa is {}'.format(gpa))

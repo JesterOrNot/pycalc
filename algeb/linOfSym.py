@@ -4,7 +4,7 @@ def lineOfSym():
     b = float(input('What is b?: '))
     a = float(input('What is a?: '))
     los = (b*-1) / (2*a)
-    print('The line of symemetey is x = {}'.format(los))
+    print('The line of symmetry is x = {}'.format(los))
 
 
 lineOfSym()
