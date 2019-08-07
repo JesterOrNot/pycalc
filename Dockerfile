@@ -1,7 +1,5 @@
 FROM gitpod/workspace-full
 USER gitpod
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-ENV PATH /opt/conda/bin:$PATH
 RUN mkdir /app
 WORKDIR /app
 ADD . /app
