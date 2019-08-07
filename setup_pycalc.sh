@@ -10,5 +10,4 @@ echo 'installing additional dependencies....'
 bash setup_conda.sh
 bash setup_sdkman.sh
 bash setup_heroku.sh
-bash setup_depend.sh
 echo 'setup completed'
