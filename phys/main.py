@@ -1,7 +1,7 @@
 #! /usr/bin/python3.7
 
 
-print("Welcome to the physics calculator available calculators include: distance speed time calculator (dstc), gravity formula(gf), lorentz factor(lf)")
+print("Welcome to the physics calculator available calculators include: distance speed time calculator (dstc), gravity formula(gf), lorentz factor(lf), mass energy(mee)")
 while True:
     keywords1 = ["dst", "dtc"]
     keywords2 = ['grav', 'gf']
@@ -14,9 +14,11 @@ while True:
             import phys.gravforce
         elif userInt == 'lf':
             import phys.lorenfact
+        elif userInt == 'me':
+            import phys.massEner
         elif userInt == 'exit':
             exit()
         else:
-            print("An error has occured")
+            print("An error has occurred")
     chooseCalc()
 chooseCalc()
