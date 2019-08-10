@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 echo 'installing dependencies....'
 bash setup_depend.sh
 echo 'dependencies installed.'
