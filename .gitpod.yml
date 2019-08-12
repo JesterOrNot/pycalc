@@ -58,6 +58,8 @@ vscode:
     - formulahendry.auto-close-tag@0.5.6:oZ/8R2VhZEhkHsoeO57hSw==
     - iansan5653.format-python-docstrings@1.0.2:7iicn7EF2Pyz2JVPc5VQMA==
     - batisteo.vscode-django@0.19.0:GOHmg6fGCbzkKe2S73i7Ig==
+    - vscjava.vscode-maven@0.18.1:Ga0twwGQDu7XhFR1f838vg==
+    - yzhang.markdown-all-in-one@2.4.2:BCNsQbcvf8Dm1nmMSvypJA==
 ports:
   - port: 3000
     onOpen: open-preview
