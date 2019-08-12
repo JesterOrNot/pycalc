@@ -19,7 +19,6 @@ github:
 tasks:
 - command: >
     bash setup_pycalc.sh
-
 vscode:
   extensions:
     - almenon.arepl@1.0.16:XGYMBgfBMAnJXoyFkfSzPA==
