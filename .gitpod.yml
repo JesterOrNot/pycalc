@@ -17,8 +17,8 @@ github:
 # add a label once the prebuild is ready to pull requests (defaults to false)
     addLabel: prebuilt-in-gitpod
 tasks:
-- command: >
-    python3 main.py
+- command: python3 main.py
+- command: bash setup_pycalc.sh
 vscode:
   extensions:
     - almenon.arepl@1.0.16:XGYMBgfBMAnJXoyFkfSzPA==
