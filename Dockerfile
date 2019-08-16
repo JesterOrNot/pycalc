@@ -10,7 +10,6 @@ WORKDIR /app
 ADD . /app
 RUN chmod +x *
 USER root
-RUN bash -c "apt install python3-dev"
 RUN yarn install
 RUN bash setup_pycalc.sh
 USER root

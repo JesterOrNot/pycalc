@@ -5,3 +5,4 @@ matplotlib
 ipython
 setuptools
 jupyter
+PyInstaller==3.0
