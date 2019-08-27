@@ -13,6 +13,7 @@
 2. cd pycalc
 3. docker build . --tag pycalc
 4. docker run -it pycalc
+
 # Changelog #
 
 ##### v1.0 (initial release) #####
