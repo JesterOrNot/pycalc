@@ -4,8 +4,8 @@ def displace():
     magnitude=final-initial
     magnitudeStr = str(magnitude)
     if magnitude > 0:
-        print('+ ' + magnitudeStr)
+        print("The awnser is: " + '+ ' + magnitudeStr)
     else:
         magnitudeStr=magnitudeStr.replace('-','- ').replace("'","")
-        print(magnitudeStr)
+        print("The awnser is: " + magnitudeStr)
 displace()
