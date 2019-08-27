@@ -4,9 +4,12 @@
 2. cd pycalc
 3. chmod +x setup_pycalc.sh
 4. bash setup_pycalc.sh
+
 ## METHOD 2 ##
 1 Use Gitpod it will be preinstalled for you
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/pycalc)
+
 ## METHOD 3 ##
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
