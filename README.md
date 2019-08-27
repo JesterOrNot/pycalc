@@ -1,5 +1,7 @@
 # Installation #
+
 ## METHOD 1 ##
+
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
 3. chmod +x setup_pycalc.sh
