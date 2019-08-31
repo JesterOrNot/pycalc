@@ -16,6 +16,8 @@ while True:
             import phys.massEner
         elif userInt == 'ld':
             import phys.lineDisplace
+        elif userInt in "velocity":
+            import phys.velocity
         elif userInt == 'exit':
             exit()
         else:
