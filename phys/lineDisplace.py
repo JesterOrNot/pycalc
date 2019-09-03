@@ -1,11 +1,11 @@
 def displace():
-    initial=float(input("What is the initial?: "))
-    final=float(input("What is the final?: "))
-    magnitude=final-initial
-    magnitudeStr = str(magnitude)
-    if magnitude > 0:
-        print("The awnser is: " + '+ ' + magnitudeStr)
+    x1=float(input("What is x1: "))
+    x2=float(input("What is x2: "))
+    Δx=x2-x1
+    Δx_str = str(Δx)
+    if Δx > 0:
+        print("Δx = " + '+ ' + Δx_str)
     else:
-        magnitudeStr=magnitudeStr.replace('-','- ').replace("'","")
-        print("The awnser is: " + magnitudeStr)
+        Δx_str=Δx_str.replace('-','- ').replace("'","")
+        print("Δx = " + Δx_str)
 displace()
