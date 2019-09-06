@@ -1,22 +1,18 @@
 # Installation #
 
 ## METHOD 1 ##
-
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
-3. chmod +x setup_pycalc.sh
 4. bash setup_pycalc.sh
 
-## METHOD 2 ##
-1 Use Gitpod it will be preinstalled for you
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/pycalc)
-
-## METHOD 3 ##
+## Method 2 ##
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
-3. docker build . --tag pycalc
-4. docker run -it pycalc
+3. python3 setup.py install
+
+# Contributiong #
+I am open to and encourage pull requests keep in mind I am fairly new and will need relativley detailed comments but here is a handy little link where you can work on the project and create the pull request all in one place!<br>
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/JesterOrNot/pycalc)
 
 # Changelog #
 
