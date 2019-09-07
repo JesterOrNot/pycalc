@@ -17,8 +17,6 @@ REQUIRED = [
     'sympy',
     'numpy',
     'matplotlib',
-    'ipython',
-    'jupyter',
     'pandas'
 ]
 here = os.path.abspath(os.path.dirname(__file__))
