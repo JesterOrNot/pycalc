@@ -60,8 +60,3 @@ vscode:
     - batisteo.vscode-django@0.19.0:GOHmg6fGCbzkKe2S73i7Ig==
     - vscjava.vscode-maven@0.18.1:Ga0twwGQDu7XhFR1f838vg==
     - yzhang.markdown-all-in-one@2.4.2:BCNsQbcvf8Dm1nmMSvypJA==
-ports:
-  - port: 3000
-    onOpen: open-preview
-  - port: 5000
-    onOpen: open-preview
