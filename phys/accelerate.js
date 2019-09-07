@@ -7,3 +7,4 @@ function acceleration() {
     var delta_t = ending_time - starting_time
     var delta_v = final_velocity - initial_velocity
 }
+acceleration()
