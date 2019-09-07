@@ -1,4 +1,5 @@
 #! /usr/bin/python3.7
+import os
 print("Welcome to the physics calculator available calculators include: distance speed time calculator (dstc), gravity formula(gf), lorentz factor(lf), mass energy(mee),line displacement(ld), velocity (velocity)")
 while True:
     keywords1 = ["dst", "dtc"]
@@ -18,6 +19,8 @@ while True:
             import phys.lineDisplace
         elif userInt in "velocity":
             import phys.velocity
+        elif userInt in "acceleration":
+            os.system("accelerate.js")
         elif userInt == 'exit':
             exit()
         else:
