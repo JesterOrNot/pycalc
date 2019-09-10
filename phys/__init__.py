@@ -3,4 +3,8 @@ from .distspeed import *
 from .gravforce import *
 from .lorenfact import *
 from .lineDisplace import *
+from .accelerate import *
+from .velocity import *
+from .range import *
+from .massEner import *
 from .main import *
