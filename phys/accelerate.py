@@ -6,5 +6,5 @@ def acceleration():
     delta_t = ending_time - starting_time
     delta_v = final_velocity - initial_velocity
     acceleration = delta_v/delta_t
-    return acceleration
+    print(f"acceleration = {acceleration} m/s")
 acceleration()
