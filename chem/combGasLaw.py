@@ -1,64 +1,41 @@
 #! /usr/bin/python3.7
+def igl():
+  unknown = input("What is the unknown variable? (P,V,n,T): ").lower()
+  R = 0.0821
+  if unknown in 'p':
+    V = float(input("What is the volume (in liters) of the gas?: "))
+    n = float(input("How many moles of the gas are present?: "))
+    T = float(input("What is the temperature of the gas (in K?): "))
+    P = (n*R*T)/V
+    print("P = {} atm.".format(P))
+  if unknown in 'v':
+    P = float(input("What is the pressure (in atm) of the gas?: "))
+    n = float(input("How many moles of the gas are present?: "))
+    T = float(input("What is the temperature of the gas (in K?): "))
+    V = (n*R*T)/P
+    print("V = {} liters.".format(V))
+  if unknown in 'n':
+    P = float(input("What is the pressure (in atm) of the gas?: "))
+    V = float(input("What is the volume (in liters) of the gas?: "))
+    T = float(input("What is the temperature of the gas (in K?): "))
+    n = (P*V)/(R*T)
+    print("n = {} moles.".format(n))
+  if unknown in 't':
+    P = float(input("What is the pressure (in atm) of the gas?: "))
+    V = float(input("What is the volume (in liters) of the gas?: "))
+    n = float(input("How many moles of the gas are present?: "))
+    T = (P*V)/(R*n)
+    print("T = {} degrees K.".format(T))
 def convert():
-    convertorno = input('Do we need to convert?: ')
-    if convertorno in 'yes, Yes, yEs, yeS, yES, YES, YEs, YEs, y':
+    convertorno = input('Do we need to convert?: ').lower()
+    if convertorno in 'yes':
         uc()
         convert()
-    elif convertorno in 'no, No, nO, NO,n':
-        CGL()
-def CGL():
-    unknown = input('What is the unknown Variable P1,V1,T1,P2,V2,T2: ')
-    if unknown in 'P1,p1':
-        v1 = float(input('What is the initial volume in Liters: '))
-        v2 = float(input('What is the volume after in Liters: '))
-        t1 = float(input('What is th initial Temperature in Kelvin: '))
-        t2 = float(input('What is the temperature after in K: '))
-        p2 = float(input('What is the pressure after in atm: '))
-        p1 = p2 * v2 * t1 / (t2 * v1)
-        print('P1 = {} atm'.format(p1))
-    if unknown in 'P2,p2':
-        t1 = float(input('What is th initial Temperature in Kelvin: '))
-        t2 = float(input('What is the temperature after in K: '))
-        v1 = float(input('What is the initial volume in Liters'))
-        v2 = float(input('What is the volume after in Liters: '))
-        p1 = float(input('What is the initial pressure in atm: '))
-        p2 = p1 * v1 * t2 / (t1 * v2)
-        print('P2 = {} atm'.format(p2))
-    if unknown in 'V1,v1':
-        p1 = float(input('What is the initial pressure in atm: '))
-        p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Temperature in Kelvin: '))
-        t2 = float(input('What is the temperature after in K: '))
-        v2 = float(input('What is the volume after in Liters: '))
-        v1 = p2 * v2 * t1 / (t2 * p1)
-        print('V1 = {} liters'.format(v1))
-    if unknown in 'V2,v2':
-        p1 = float(input('What is the initial pressure in atm: '))
-        p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Tempters in Kelvin: '))
-        t2 = float(input('What is the temperature after in K: '))
-        v1 = float(input('What is the initial volume in Liters: '))
-        v2 = p1 * t2 * v1 / (p2 * t1)
-        print('V2 = {} liters'.format(v2))
-    if unknown in 'T1,t1':
-        p1 = float(input('What is the initial pressure in atm: '))
-        p2 = float(input('What is the pressure after in atm: '))
-        v1 = float(input('What is th initial volume in Liters: '))
-        v2 = float(input('What is the volume after in Liters: '))
-        t2 = float(input('What is the temperature after in K: '))
-        t1 = p1 * v1 * t2 / (p2 * v2)
-        print('T1 = {} kelvin'.format(t1))
-    if unknown in 'T2,t2':
-        p1 = float(input('What is the initial pressure in atm: '))
-        p2 = float(input('What is the pressure after in atm: '))
-        t1 = float(input('What is th initial Temperature in Kelvin: '))
-        v2 = float(input('What is the volume after in Liters: '))
-        v1 = float(input('What is the initial volume in Liters: '))
-        t2 = p2 * t1 * v2 / (p1 * v1)
-        print('T2 = {} kelvin'.format(t2))
+    elif convertorno in 'no':
+        igl()
 def uc():
-    unknown = input('What Are we converting to Temperature or pressure: ')
-    if unknown in 'temp, Temperature, temperature, t':
+    unknown = input('What Are we converting to Tempature or pressure: ')
+    if unknown in 'temp, Tempature, tempature, t':
         def TC():
             c = 0
             decimal = c
