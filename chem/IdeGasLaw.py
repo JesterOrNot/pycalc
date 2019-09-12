@@ -1,26 +1,26 @@
 #! /usr/bin/python3.7
 def igl():
-  unknown = input("What is the unknown variable? (P,V,n,T): ")
-  R = 0.0821 
-  if unknown in 'P, p':
+  unknown = input("What is the unknown variable? (P,V,n,T): ").lower()
+  R = 0.0821
+  if unknown in 'p':
     V = float(input("What is the volume (in liters) of the gas?: "))
     n = float(input("How many moles of the gas are present?: "))
     T = float(input("What is the temperature of the gas (in K?): "))
     P = (n*R*T)/V
     print("P = {} atm.".format(P))
-  if unknown in 'V, v':
+  if unknown in 'v':
     P = float(input("What is the pressure (in atm) of the gas?: "))
     n = float(input("How many moles of the gas are present?: "))
     T = float(input("What is the temperature of the gas (in K?): "))
     V = (n*R*T)/P
     print("V = {} liters.".format(V))
-  if unknown in 'N, n':
+  if unknown in 'n':
     P = float(input("What is the pressure (in atm) of the gas?: "))
     V = float(input("What is the volume (in liters) of the gas?: "))
     T = float(input("What is the temperature of the gas (in K?): "))
     n = (P*V)/(R*T)
     print("n = {} moles.".format(n))
-  if unknown in 'T, t':
+  if unknown in 't':
     P = float(input("What is the pressure (in atm) of the gas?: "))
     V = float(input("What is the volume (in liters) of the gas?: "))
     n = float(input("How many moles of the gas are present?: "))
