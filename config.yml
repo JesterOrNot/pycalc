@@ -1,0 +1,10 @@
+version: 2
+jobs:
+    build:
+        docker:
+          - image: gitpod/workspace-full
+        steps:
+          - run:
+            name: The first step
+            command: |
+                echo "Hello world"
