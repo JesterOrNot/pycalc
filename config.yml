@@ -9,3 +9,11 @@ jobs:
             name: setup.py
             command: |
                 pip3 install -r requirements.txt
+workflows:
+  version: 2
+  example:
+    jobs:
+      - install
+    - I-Have-Code:
+         requires:
+           - Hello-World
