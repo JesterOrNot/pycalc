@@ -1,19 +1,8 @@
-version: 2.1
-jobs:
-  install:
-    docker:
-      - image: gitpod/workspace-full
-    steps:
-      - checkout
-      - run:
-            name: setup.py
-            command: |
-                pip3 install -r requirements.txt
-workflows:
-  version: 2
-  example:
-    jobs:
-      - install
-    - I-Have-Code:
-         requires:
-           - Hello-World
+  version: 2.1
+  jobs:
+    build:
+      docker:
+        - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+      steps:
+        - checkout # check out the code in the project directory
+        - run: echo "hello world" # run the `echo` command
