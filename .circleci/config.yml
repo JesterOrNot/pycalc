@@ -5,4 +5,5 @@
         - image: gitpod/workspace-full # the primary container, where your job's commands are run
       steps:
         - checkout # check out the code in the project directory
+        - run: pip3 install -r requirements.txt
         - run: python3 setup.py install
