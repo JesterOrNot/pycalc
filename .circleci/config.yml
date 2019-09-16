@@ -18,6 +18,4 @@
    setup.py_installer:
      jobs:
        - setup.py-setup
-   setup_pycalc.sh_instaler:
-     jobs:
        - bash-setup
