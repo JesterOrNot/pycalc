@@ -1,4 +1,6 @@
-#! /usr/bin/python3.7
+#!/usr/bin/python3
+
+
 def igl():
     unknown = input("What is the unknown variable? (P,V,n,T): ").lower()
     R = 0.0821
@@ -38,8 +40,7 @@ def convert():
 
 
 def uc():
-    unknown = input(
-        'What Are we converting to Temperature or pressure: ').lower()
+    unknown = input('What Are we converting to Temperature or pressure: ').lower()
     if unknown in 't,te,tem,temp':
         def TC():
             c = 0
@@ -174,81 +175,81 @@ def uc():
                 if decimal4 is str:
                     mmhg = int(input('How much mmhg are you converting?: '))
                     kpa2 = mmhg * 0.133322387415
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
                 else:
                     mmhg = float(input('How much mmhg are you converting: '))
                     kpa2 = mmhg * 0.133322387415
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
             if unknown1 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG' and \
                     unknown2 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR':
                 if decimal2 is str:
                     mmhg = int(input('How much mmhg are you converting?: '))
                     torr = mmhg * 1
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
                 else:
                     mmhg = float(input('How much mmhg are you converting: '))
                     torr = mmhg * 1
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
             if unknown1 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG' and \
                     unknown2 in 'ATM, ATm, Atm, aTM, aTm, atM, atm':
                 if decimal is str:
                     mmhg = int(input('How much mmhg are you converting?: '))
                     atm = mmhg / 760
-                    print('{} atm'.format(atm))
+                    print(f'{atm} atm')
                 else:
                     mmhg = float(input('How much mmhg are you converting: '))
                     atm = mmhg / 760
-                    print('{} atm'.format(atm))
+                    print(f'{atm} atm')
             if unknown1 in 'ATM, ATm, Atm, aTM, aTm, atM, atm' and \
                     unknown2 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG':
                 if decimal3 is str:
                     atm = int(input('How much atm are you converting?: '))
                     mmhg = atm * 760
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
                 else:
                     atm = float(input('How much atm are you converting: '))
                     mmhg = atm * 760
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
             if unknown1 in 'ATM, ATm, Atm, aTM, aTm, atM, atm' and \
                     unknown2 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR':
                 if decimal2 is str:
                     atm = int(input('How much atm are you converting?: '))
                     torr = atm * 760
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
                 else:
                     atm = float(input('How much atm are you converting: '))
                     torr = atm * 760
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
             if unknown1 in 'ATM, ATm, Atm, aTM, aTm, atM, atm' and \
                     unknown2 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa':
                 if decimal4 is str:
                     atm = int(input('How much atm are you converting?: '))
                     kpa2 = atm * 101.325
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
                 else:
                     atm = float(input('How much atm are you converting: '))
                     kpa2 = atm * 101.325
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
             if unknown1 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR' and \
                     unknown2 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa':
                 if decimal4 is str:
                     torr = int(input('How much torr are you converting?: '))
                     kpa2 = torr * 0.1333223684
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
                 else:
                     torr = float(input('How much torr are you converting: '))
                     kpa2 = torr * 0.1333223684
-                    print('{} kpa'.format(kpa2))
+                    print(f'{kpa2} kpa')
             if unknown1 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR' and \
                     unknown2 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG':
                 if decimal3 is str:
                     torr = int(input('How much torr are you converting?: '))
                     mmhg = torr / 1
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
                 else:
                     torr = float(input('How much torr are you converting: '))
                     mmhg = torr / 1
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
             if unknown1 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR' and \
                     unknown2 in 'ATM, ATm, Atm, aTM, aTm, atM, atm':
                 if decimal is str:
