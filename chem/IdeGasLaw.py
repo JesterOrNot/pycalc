@@ -88,14 +88,13 @@ def uc():
                     k = float(
                         input('What is the starting temp in k that you are converting?: '))
                     f = k * 1.8 - 459.67
-                    print('{} °F'.format(f))
-            if unknown1 in 'K, k' and \
-               unknown2 in 'C, c':
+                    print(f'{f} °F')
+            if unknown1 == 'k' and unknown2 == 'c':
                 if decimal is str:
                     k = int(
                         input('What is the starting temp in k that you are converting?: '))
                     c = k - 273
-                    print('{} °C'.format(c))
+                    print(f'{c} °C')
                 else:
                     k = float(
                         input('What is the starting temp in k that you are converting?: '))
