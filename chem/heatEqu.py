@@ -200,16 +200,16 @@ def uc():
                     kpa = float(input('How much kpa are you converting: '))
                     torr = kpa / 0.1333223684
                     print(f'{torr} torr')
-            if unknown1 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa ' and \
-            unknown2 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG':
+            if unknown1 == 'kpa ' and \
+            unknown2 == 'mmhg':
                 if decimal3 is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
             if unknown1 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG' and \
             unknown2 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa' :
                 if decimal4 is str:
