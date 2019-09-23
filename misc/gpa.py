@@ -30,6 +30,8 @@ def gpa():
         sum_of_num = sum(r)  # the equation for gpa is sum/length this takes the sum of the list we made and stores it in a variable
         length = len(r)  # this takes the length of the list and once again stores it in a variable
         gpa = sum_of_num / length  # this is the actual equ
-        print('Your gpa is {}'.format(gpa))
+        print(f'Your gpa is {gpa}')
         break
+
+
 gpa()
