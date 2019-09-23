@@ -1,4 +1,6 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3
+
+
 def HE():
     q = 0
     decimal1 = q
@@ -11,90 +13,89 @@ def HE():
     ini = 0
     decimal5 = ini
     dt = 0
-    decimal6 = dt 
-    s = input('What are we solving for? (q, m, c or ΔT): ')
-    if s in 'q, Q':
+    s = input('What are we solving for? (q, m, c or ΔT): ').lower()
+    if s == "q":
         if decimal2 is str:
             m = int(input('What is the mass in grams(m): '))
         else:
              m = float(input('What is the mass in grams(m): '))
         if decimal4 is str:
-            fi = int(input('What is the final tempature in °C(ΔT): '))
+            fi = int(input('What is the final temperature in °C(ΔT): '))
         else:
-            fi = float(input('What is the final tempature in °C(ΔT): ')) 
+            fi = float(input('What is the final temperature in °C(ΔT): '))
         if decimal5 is str:
-            ini = int(input('What is the initial tempature in °C(ΔT): '))
+            ini = int(input('What is the initial temperature in °C(ΔT): '))
         else:
-            ini = float(input('What is the initial tempature in °C(ΔT): '))
+            ini = float(input('What is the initial temperature in °C(ΔT): '))
         if decimal3 is str:
             c = int(input('What is the specific heat? (c): '))
         else:
             c = float(input('What is the specific heat? (c): '))
-        q = m*c*(fi - ini)
-        print('q = {} J'.format(q))
-    elif s in 'M, m':
+        q = m * c*(fi - ini)
+        print(f'q = {q}J')
+    elif s == 'm':
         if decimal1 is str:
             q = int(input('What is the amount of heat in joules(q): '))
         else:
             q = float(input('What is the amount of heat in joules(q): '))
         if decimal4 is str:
-            fi = int(input('What is the final tempature in °C(ΔT): '))
+            fi = int(input('What is the final temperature in °C(ΔT): '))
         else:
-            fi = float(input('What is the final tempature in °C(ΔT): ')) 
+            fi = float(input('What is the final temperature in °C(ΔT): '))
         if decimal5 is str:
-            ini = int(input('What is the initial tempature in °C(ΔT): '))
+            ini = int(input('What is the initial temperature in °C(ΔT): '))
         else:
-            ini = float(input('What is the initial tempature in °C(ΔT): '))
+            ini = float(input('What is the initial temperature in °C(ΔT): '))
         if decimal3 is str:
             c = int(input('What is the specific heat? (c): '))
         else:
             c = float(input('What is the specific heat? (c): '))
         m = q/(c*(fi - ini))
-        print('m = {} g'.format(m))
-    elif s in 'c, C':
+        print('m = {m}g')
+    elif s == 'c':
         if decimal1 is str:
-            q = int(input('What is the amoount of heat in joules(m): '))
+            q = int(input('What is the amount of heat in joules(m): '))
         else:
             q = float(input('What is the amount of heat in joules(q): '))
         if decimal4 is str:
-            fi = int(input('What is the final tempature? (c): '))
+            fi = int(input('What is the final temperature? (c): '))
         else:
-            c = float(input('What is the final tempature? (c): '))
+            c = float(input('What is the final temperature? (c): '))
         if decimal5 is str:
-            ini = int(input('What is the initial tempature (c)'))
+            ini = int(input('What is the initial temperature (c)'))
         else:
-            ini = float(input('What is the initial tempature (c):'))
+            ini = float(input('What is the initial temperature (c):'))
         if decimal2 is str:
            m = int(input('What is the mass in grams(m): '))
         else:
           m = float(input('What is the mass in grams(m): '))
         c = q/((fi-ini)*m)
-        print('c = {} J/°C'.format(c))
-    elif s in 'T, t':
+        print('c = {c}J/°C')
+    elif s == 't':
       if decimal1 is str:
         q = int(input('What is the amount of heat in Joules (q): '))
       else:
         q = float(input('What is the amount of heat in Joules (q): '))
       if decimal2 is str:
-        m = int(input('What is the mass in grams(m): ')) 
+        m = int(input('What is the mass in grams(m): '))
       else:
         m = float(input('What is the mass in grams(m): '))
       if decimal3 is str:
         c = int(input('What is the specific heat? (c): '))
       else:
-        c = int(input('What is the specific heat (c): ')) 
+        c = int(input('What is the specific heat (c): '))
       dt = q/(c*m)
-      print('ΔT = {} °C'.format(dt))
+      print('ΔT = {dt}°C')
 def convert():
-    convertorno = input('Do we need to convert?: ')
-    if convertorno in 'yes, Yes, yEs, yeS, yES, YES, YEs, YEs, y':
+    convert_or_no = input('Do we need to convert?: ').lower()
+    if convert_or_no in 'yes, Yes, yEs, yeS, yES, YES, YEs, YEs, y':
         uc()
         convert()
-    elif convertorno in 'no, No, nO, NO,n':
+    elif convert_or_no in 'no, No, nO, NO,n':
         HE()
 def uc():
-    unknown = input('What Are we converting to Tempature or pressure: ')
-    if unknown in 'temp, Tempature, tempature, t':
+    unknown = input('What Are we converting to temperature or pressure: ')
+    if unknown in 'temp, temperature, temperature, t':
         def TC():
             c = 0
             decimal = c
@@ -177,40 +178,38 @@ def uc():
             decimal3 = mmhg
             kpa2 = 0
             decimal4 = kpa2
-            unknown1 = input(
-                'What are we starting with? (Kpa, Atm, Torr,Mmhg): ')
-            unknown2 = input(
-                'What are we converting to? (Kpa, Atm, Torr,Mmhg): ')
-            if unknown1 in 'KPA, KPa, Kpa, kPA, kPa, kpA, kpa' and \
-              unknown2 in 'ATM, ATm, Atm, aTM, aTm, atM, atm':
+            unknown1 = input('What are we starting with? (Kpa, Atm, Torr,Mmhg): ').lower()
+            unknown2 = input('What are we converting to? (Kpa, Atm, Torr,Mmhg): ').lower()
+            if unknown1 == 'kpa' and \
+              unknown2 == 'atm':
                 if decimal is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     atm = kpa / 101.325
-                    print('{} atm'.format(atm))
+                    print(f'{atm} atm')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     atm = kpa / 101.325
-                    print('{} atm'.format(atm))
-            if unknown1 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa ' and \
-            unknown2 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR':
+                    print(f'{atm} atm')
+            if unknown1 == 'kpa' and \
+            unknown2 == 'torr':
                 if decimal2 is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     torr = kpa / 101.3
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     torr = kpa / 0.1333223684
-                    print('{} torr'.format(torr))
-            if unknown1 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa ' and \
-            unknown2 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG':
+                    print(f'{torr} torr')
+            if unknown1 == 'kpa ' and \
+            unknown2 == 'mmhg':
                 if decimal3 is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
             if unknown1 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG' and \
             unknown2 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa' :
                 if decimal4 is str:
