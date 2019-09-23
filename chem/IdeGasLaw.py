@@ -136,10 +136,10 @@ def uc():
             kpa2 = 0
             decimal4 = kpa2
             unknown1 = input(
-                'What are we starting with? (Kpa, Atm, Torr,Mmhg): ')
+                'What are we starting with? (Kpa, Atm, Torr,Mmhg): ').lower()
             unknown2 = input(
-                'What are we converting to? (Kpa, Atm, Torr,Mmhg): ')
-            if unknown1 in 'KPA, KPa, Kpa, kPA, kPa, kpA, kpa' and \
+                'What are we converting to? (Kpa, Atm, Torr,Mmhg): ').lower()
+            if unknown1 == 'kpa' and \
                     unknown2 in 'ATM, ATm, Atm, aTM, aTm, atM, atm':
                 if decimal is str:
                     kpa = int(input('How much kpa are you converting?: '))
