@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full
+FROM gitpod/workspace-full-vnc
 USER root
 RUN mkdir /app
 WORKDIR /app
