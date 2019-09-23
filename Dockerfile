@@ -1,5 +1,4 @@
 FROM gitpod/workspace-full
-USER gitpod
 USER root
 RUN mkdir /app
 WORKDIR /app
