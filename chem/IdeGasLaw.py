@@ -149,27 +149,27 @@ def uc():
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     atm = kpa / 101.325
-                    print('{} atm'.format(atm))
+                    print(f'{atm} atm')
             if unknown1 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa ' and \
                     unknown2 in 'TORR, TORr, TOrr, Torr, tORR, tORr, tOrr, torr, torR':
                 if decimal2 is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     torr = kpa / 101.3
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     torr = kpa / 0.1333223684
-                    print('{} torr'.format(torr))
+                    print(f'{torr} torr')
             if unknown1 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa ' and \
                     unknown2 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG':
                 if decimal3 is str:
                     kpa = int(input('How much kpa are you converting?: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
                 else:
                     kpa = float(input('How much kpa are you converting: '))
                     mmhg = kpa / 0.1333223684
-                    print('{} mmhg'.format(mmhg))
+                    print(f'{mmhg} mmhg')
             if unknown1 in 'MMHG, MMHg, MMhg, Mmhg, mMHG, mmHg, mMhg, mmhg, mmhG' and \
                     unknown2 in 'KPA, KPa, Kpa,kPA, kPa, kpA, kpa':
                 if decimal4 is str:
