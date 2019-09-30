@@ -1,5 +1,7 @@
 import numpy as np
 import numpy
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import matplotlib.axis
 from sympy import *
