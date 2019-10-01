@@ -1,15 +1,17 @@
 # Installation #
 
 ## METHOD 1 ##
+``` bash
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
 4. bash setup_pycalc.sh
-
+```
 ## Method 2 ##
+``` bash
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
 3. python3 setup.py install
-
+```
 # Changelog #
 
 ##### v1.0 (initial release) #####
