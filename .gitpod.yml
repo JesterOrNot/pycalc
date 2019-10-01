@@ -1,5 +1,4 @@
-image:
-  file: Dockerfile
+image: gitpod/workspace-full-vnc:branch-jx-python-tk
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
@@ -18,6 +17,9 @@ github:
     addLabel: prebuilt-in-gitpod
 tasks:
 - command: bash setup_pycalc.sh
+ports:
+  - port: 6080
+    onOpen: open-preview
 vscode:
   extensions:
     - almenon.arepl@1.0.16:XGYMBgfBMAnJXoyFkfSzPA==
