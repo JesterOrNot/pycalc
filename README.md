@@ -4,7 +4,7 @@
 ``` bash
 1. git clone https://github.com/JesterOrNot/pycalc.git
 2. cd pycalc
-4. bash setup_pycalc.sh
+3. bash setup_pycalc.sh
 ```
 ## Method 2 ##
 ``` bash
