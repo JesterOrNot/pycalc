@@ -19,7 +19,7 @@ tasks:
 - command: bash setup_pycalc.sh
 ports:
   - port: 6080
-    onOpen: open-preview
+    onOpen: ignore
 vscode:
   extensions:
     - almenon.arepl@1.0.16:XGYMBgfBMAnJXoyFkfSzPA==
