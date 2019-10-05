@@ -14,6 +14,11 @@
 2. cd pycalc
 3. python3 setup.py install
 ```
+
+Try it in Gitpod!
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/<org>/<repo>)
+
 # Changelog #
 
 ##### v1.0 (initial release) #####
