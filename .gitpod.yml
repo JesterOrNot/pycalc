@@ -24,7 +24,6 @@ vscode:
   extensions:
     - almenon.arepl@1.0.16:XGYMBgfBMAnJXoyFkfSzPA==
     - KevinRose.vsc-python-indent@1.4.0:pb+bIlsFJOAdUNBE31dQwQ==
-    - ms-python.python@2019.6.24221:eSSDlQYifwrEZXcrjL0W/g==
     - ms-python.anaconda-extension-pack@1.0.1:zDfOOe7FoQk40SnrhxWS5g==
     - eamodio.gitlens@9.9.2:4mgTdhdGJaQTZHTMTMDPYg==
     - ms-vsliveshare.vsliveshare-pack@0.3.2:0K1J2luvqWif20PhMHupAA==
