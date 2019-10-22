@@ -16,8 +16,7 @@ values = {
 
 
 def gpa():
-    c = 0
-    while c == 0:  # For the infinite loop
+    while True:  # For the infinite loop
         x = int(input('How grades do you have?:  '))  # This sets a limit
         x = x - 1  # this is to account for the computers understanding that 0 is included in the number's value
         r = []  # helps maintain the limit
